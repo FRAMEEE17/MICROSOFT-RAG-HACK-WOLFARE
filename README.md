@@ -1,4 +1,4 @@
-# 🛡️ Cyber Security News Summarizer & Chatbot Project
+# 🛡️ LLM-based Cyber Security News Summarizer & Chatbot Project
 # 📋 Table of Contents
     - Disclaimer
     - Objective
