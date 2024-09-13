@@ -3,15 +3,15 @@
     - Disclaimer
     - Objective
     - Dataset Description
-    - Trained Models
-    - Model Performance
+    - Large Language Model API use
+    - Performance
     - How to Run (Prototype)
     - How to Deploy the Server (Prototype)
     - Manual
     - Future Work
     
 ## ⚠️Disclaimer
-This project is currently in the development phase. If you encounter any bugs during testing, please feel free to reach out. The project has implemented RAG with cyber security data from various sources, including the Hacker News dataset and cyber security summaries from developers (e.g., SIEM tools manuals).
+This project is currently in the development phase. If you encounter any bugs during testing, please feel free to reach out. 
 
 ## 🎯Objective
 The goal of this project is to create a tool for Security Operation Centers (SOCs) that enables them to:
@@ -37,13 +37,12 @@ The goal of this project is to create a tool for Security Operation Centers (SOC
         - Solar-embedding-1-large-passage: Specialized for document embedding of cybersecurity content.
         - Solar-1-mini-groundedness-check: Tailored for verifying the groundedness and hallucination of responses in cybersecurity discussions.
         - GPT-4o: Optimized for news summarizer.
-## 📈 Model Performance
+## 📈 Performance
     Preliminary testing shows promising results:
 
         Response Accuracy: 62% 
         Average Response Time: 8.91 seconds
-        Groundedness Score
-        Relevance to Cybersecurity Queries (confidence score)
+        
 ## 🚀How to Run (Prototype)
 0. Prerequisites
 Please ensure that python3, python3-pip were installed which enable to be executed via CLI.
@@ -90,6 +89,8 @@ $ python3 api_server.py
 2. Implement SSL/TLS certificate for the API service to secure the connection in the future. 
 3. Provide our own model running on our server to isolate model from the other which will give the privacy to our end user.
 4. Improve UI/UX based on the user feedback.
-5. Integrate additional cybersecurity news and threat intelligence feeds
-6. Develop tools for clients to fine-tune AI models with their own data.
-7. Integrate cutting-edge AI technologies and techniques to enhance efficiency such as intent classifier, false-negative reduction, models stacking.
+5. Integrate additional cybersecurity news and threat intelligence feeds.
+6. Develop tools for clients to finetune AI models with their own data.
+7. Use custom embedding models and finetune with their own data.
+8. Implement adaptive RAG which is more efficient on complex queries.
+9. Finetune models on Azure AI.
